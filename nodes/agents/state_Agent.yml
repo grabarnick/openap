@@ -9,11 +9,11 @@ parameters:
   llm-model-key: 1000001-open_ai_gpt41-zkp
   llm-model-settings:
     max-tokens: 4000
-    temperature: 1.0
+    temperature: 0.6
     top-p: 1.0
     frequency-penalty: 0.0
     presence-penalty: 0.0
-    verbose-mode: false
+    verbose-mode: true
   system-promts:
     role: Помощник
     goal: "Выполни задание, которое тебе дал пользователь"
@@ -28,9 +28,9 @@ parameters:
       1. Проанализируй последние сообщения в чате.
       2. Составь один абзац текста с основными событиями, переведи на русский язык. Ссылки и даты не включай.
       3. Отправь пользователю.
-    query-override: ""
+    query-override: null
   tools:
-  - function_amomcp_amocrm_list_leads_yjxda
+  - state_searchArticles
   handoff-agents:
     allowed-any: false
     allowed-agent-node-ids: []
