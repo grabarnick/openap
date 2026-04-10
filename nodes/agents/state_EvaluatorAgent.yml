@@ -1,0 +1,39 @@
+---
+id: state_EvaluatorAgent
+name: Оценщик и упроститель
+position:
+  x: 1244
+  y: -290
+next-step: null
+parameters:
+  llm-model-key: 1000001-open_ai_gpt41-zkp
+  llm-model-settings:
+    max-tokens: 4000
+    temperature: 0.7
+    top-p: 1.0
+    frequency-penalty: 0.0
+    presence-penalty: 0.0
+    verbose-mode: true
+  system-promts:
+    role: Эксперт по упрощению текстов
+    goal: "Оцени качество ответа предыдущего агента и перепиши его максимально просто для школьника."
+    instructions: |-
+      1. Проанализируй ответ предыдущего агента в истории чата.
+      2. Если ответ слишком сложный, содержит много терминов или плохо структурирован, перепиши его.
+      3. Твой итоговый ответ должен быть:
+         - Написан простым и понятным языком (ориентируйся на уровень 5-го класса школы).
+         - Содержать интересные аналогии, чтобы объяснить сложные вещи.
+         - Коротким и структурированным (используй списки, если это уместно).
+         - Вежливым и дружелюбным по тону.
+      4. Если в оригинальном ответе были ссылки на источники, обязательно сохрани их в конце своего упрощенного текста.
+      5. Твой ответ должен полностью заменить предыдущий для пользователя.
+    query-override: null
+  tools: []
+  handoff-agents:
+    allowed-any: false
+    allowed-agent-node-ids: []
+  stay-in-agent: false
+  telephony-config: null
+  enable-context: true
+  chat-history-limit: 50
+  sequential-tool-calls-limit: 5
