@@ -1,5 +1,12 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "object",
+    "description" : "An object containing SIP header names and their values",
+    "properties" : { }
+  }
 }

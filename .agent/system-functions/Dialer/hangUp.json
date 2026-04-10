@@ -1,10 +1,16 @@
 {
-  "type" : "object",
-  "properties" : {
-    "text" : {
-      "type" : "string",
-      "description" : "Optional text message to send when hanging up on non-telephony channels"
-    }
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "text" : {
+        "type" : "string",
+        "description" : "Optional text message to send when hanging up on non-telephony channels"
+      }
+    },
+    "required" : [ ]
   },
-  "required" : [ ]
+  "output" : {
+    "type" : "object",
+    "description" : "No return value"
+  }
 }

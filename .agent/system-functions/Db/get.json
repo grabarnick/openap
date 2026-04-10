@@ -1,14 +1,20 @@
 {
-  "type" : "object",
-  "properties" : {
-    "dbIntegration" : {
-      "type" : "string",
-      "description" : ""
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "dbIntegration" : {
+        "type" : "string",
+        "description" : ""
+      },
+      "documentKey" : {
+        "type" : "string",
+        "description" : "Document key"
+      }
     },
-    "documentKey" : {
-      "type" : "string",
-      "description" : "Document key"
-    }
+    "required" : [ "dbIntegration", "documentKey" ]
   },
-  "required" : [ "dbIntegration", "documentKey" ]
+  "output" : {
+    "type" : [ "object", "null" ],
+    "description" : "Found document or null if no matching document exists"
+  }
 }

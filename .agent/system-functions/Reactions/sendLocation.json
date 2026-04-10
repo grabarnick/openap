@@ -1,14 +1,20 @@
 {
-  "type" : "object",
-  "properties" : {
-    "latitude" : {
-      "type" : "number",
-      "description" : "Latitude coordinate"
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "latitude" : {
+        "type" : "number",
+        "description" : "Latitude coordinate"
+      },
+      "longitude" : {
+        "type" : "number",
+        "description" : "Longitude coordinate"
+      }
     },
-    "longitude" : {
-      "type" : "number",
-      "description" : "Longitude coordinate"
-    }
+    "required" : [ "latitude", "longitude" ]
   },
-  "required" : [ "latitude", "longitude" ]
+  "output" : {
+    "type" : "null",
+    "description" : "No return value"
+  }
 }

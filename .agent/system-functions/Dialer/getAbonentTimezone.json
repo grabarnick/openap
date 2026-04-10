@@ -1,5 +1,11 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "string",
+    "description" : "The formatted timezone offset (e.g. '+03:00:00') or null"
+  }
 }

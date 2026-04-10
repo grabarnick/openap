@@ -1,5 +1,12 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "object",
+    "description" : "The payload data for the current number",
+    "properties" : { }
+  }
 }

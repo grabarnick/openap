@@ -1,5 +1,11 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "object",
+    "description" : "The result of the last function call, can be any type or undefined"
+  }
 }

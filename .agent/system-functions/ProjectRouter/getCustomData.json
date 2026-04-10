@@ -1,5 +1,11 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "object",
+    "description" : "The custom data object from the last switch, or null if no switch occurred or no data was passed"
+  }
 }

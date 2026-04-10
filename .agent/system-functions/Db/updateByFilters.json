@@ -1,22 +1,28 @@
 {
-  "type" : "object",
-  "properties" : {
-    "dbIntegration" : {
-      "type" : "string",
-      "description" : ""
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "dbIntegration" : {
+        "type" : "string",
+        "description" : ""
+      },
+      "filters" : {
+        "type" : "object",
+        "description" : "Filter criteria",
+        "properties" : { },
+        "required" : [ ]
+      },
+      "operator" : {
+        "type" : "object",
+        "description" : "Update operator ($set, $inc, etc.)",
+        "properties" : { },
+        "required" : [ ]
+      }
     },
-    "filters" : {
-      "type" : "object",
-      "description" : "Filter criteria",
-      "properties" : { },
-      "required" : [ ]
-    },
-    "operator" : {
-      "type" : "object",
-      "description" : "Update operator ($set, $inc, etc.)",
-      "properties" : { },
-      "required" : [ ]
-    }
+    "required" : [ "dbIntegration", "filters", "operator" ]
   },
-  "required" : [ "dbIntegration", "filters", "operator" ]
+  "output" : {
+    "type" : "object",
+    "description" : "Operation result"
+  }
 }

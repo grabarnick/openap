@@ -1,16 +1,22 @@
 {
-  "type" : "object",
-  "properties" : {
-    "dbIntegration" : {
-      "type" : "string",
-      "description" : ""
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "dbIntegration" : {
+        "type" : "string",
+        "description" : ""
+      },
+      "filters" : {
+        "type" : "object",
+        "description" : "Filter criteria",
+        "properties" : { },
+        "required" : [ ]
+      }
     },
-    "filters" : {
-      "type" : "object",
-      "description" : "Filter criteria",
-      "properties" : { },
-      "required" : [ ]
-    }
+    "required" : [ "dbIntegration" ]
   },
-  "required" : [ "dbIntegration" ]
+  "output" : {
+    "type" : "number",
+    "description" : "Number of matching documents"
+  }
 }

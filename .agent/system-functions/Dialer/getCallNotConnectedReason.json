@@ -1,5 +1,11 @@
 {
-  "type" : "object",
-  "properties" : { },
-  "required" : [ ]
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  },
+  "output" : {
+    "type" : "string",
+    "description" : "The reason the call was not connected (e.g. 'BUSY', 'NO_ANSWER', 'TECHNICAL_ERROR')"
+  }
 }

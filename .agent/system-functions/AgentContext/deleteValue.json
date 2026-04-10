@@ -1,14 +1,20 @@
 {
-  "type" : "object",
-  "properties" : {
-    "key" : {
-      "type" : "string",
-      "description" : "Key to delete"
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "key" : {
+        "type" : "string",
+        "description" : "Key to delete"
+      },
+      "agentId" : {
+        "type" : "string",
+        "description" : "Optional agent ID or 'all'. If 'all', deletes from all contexts"
+      }
     },
-    "agentId" : {
-      "type" : "string",
-      "description" : "Optional agent ID or 'all'. If 'all', deletes from all contexts"
-    }
+    "required" : [ "key" ]
   },
-  "required" : [ "key" ]
+  "output" : {
+    "type" : "object",
+    "description" : "No return value"
+  }
 }
