@@ -1,0 +1,17 @@
+{
+  "description" : "List all catalogs (custom lists) in the amoCRM account. Returns catalog name, type, sort order, and settings.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      }
+    },
+    "required" : [ ]
+  }
+}

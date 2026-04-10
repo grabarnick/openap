@@ -1,0 +1,17 @@
+{
+  "description" : "Get a single contact by ID with full details including custom fields, tags, and optionally related leads and companies.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Contact ID"
+      },
+      "with" : {
+        "type" : "string",
+        "description" : "Comma-separated related entities: catalog_elements, leads, customers"
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "description" : "Stores a key-value pair in the context. Used to store objects different from text.",
   "input" : {
     "type" : "object",
     "properties" : {

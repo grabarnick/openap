@@ -1,4 +1,5 @@
 {
+  "description" : "Finds documents with filtering and pagination options",
   "input" : {
     "type" : "object",
     "properties" : {

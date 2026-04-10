@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the project short name from the current request's bot ID",
   "input" : {
     "type" : "object",
     "properties" : { },

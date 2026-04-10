@@ -1,4 +1,5 @@
 {
+  "description" : "Sends an audio file as a response",
   "input" : {
     "type" : "object",
     "properties" : {

@@ -1,4 +1,5 @@
 {
+  "description" : "Sends an image as a response",
   "input" : {
     "type" : "object",
     "properties" : {

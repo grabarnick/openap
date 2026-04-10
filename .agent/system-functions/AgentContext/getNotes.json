@@ -1,4 +1,5 @@
 {
+  "description" : "Returns concatenated text (by time of addition)",
   "input" : {
     "type" : "object",
     "properties" : {

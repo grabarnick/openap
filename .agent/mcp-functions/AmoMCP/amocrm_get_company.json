@@ -1,0 +1,17 @@
+{
+  "description" : "Get a single company by ID with full details including custom fields, tags, and optionally related contacts, leads.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Company ID"
+      },
+      "with" : {
+        "type" : "string",
+        "description" : "Comma-separated related entities: catalog_elements, leads, customers, contacts"
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

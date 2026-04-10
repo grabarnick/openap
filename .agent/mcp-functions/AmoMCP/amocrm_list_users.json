@@ -1,0 +1,17 @@
+{
+  "description" : "List all users in the amoCRM account. Returns user ID, name, email, language, and rights. Useful for getting responsible_user_id values.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      }
+    },
+    "required" : [ ]
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "description" : "Recognizes audio content using the specified ASR integration",
   "input" : {
     "type" : "object",
     "properties" : {

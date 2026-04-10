@@ -1,4 +1,5 @@
 {
+  "description" : "Finds a single document by documentKey",
   "input" : {
     "type" : "object",
     "properties" : {

@@ -1,4 +1,5 @@
 {
+  "description" : "Returns the history of completed and available dial attempts for the current number. Returns null if not available",
   "input" : {
     "type" : "object",
     "properties" : { },

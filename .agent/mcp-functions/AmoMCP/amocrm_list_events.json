@@ -1,0 +1,33 @@
+{
+  "description" : "List events (activity log) in amoCRM. Events track changes to entities. Can filter by entity type, entity ID, event type, user, and date range. Max 100 per page.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 100 (default: 50)"
+      },
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Filter by entity type (lead, contact, company, task, etc.)"
+      },
+      "entity_id" : {
+        "type" : "number",
+        "description" : "Filter by entity ID"
+      },
+      "type" : {
+        "type" : "string",
+        "description" : "Filter by event type"
+      },
+      "created_by" : {
+        "type" : "number",
+        "description" : "Filter by user who created the event"
+      }
+    },
+    "required" : [ ]
+  }
+}

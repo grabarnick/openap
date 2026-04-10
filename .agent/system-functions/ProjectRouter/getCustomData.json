@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the custom data that was passed during the last context switch to this bot",
   "input" : {
     "type" : "object",
     "properties" : { },

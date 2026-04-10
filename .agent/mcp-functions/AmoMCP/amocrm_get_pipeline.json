@@ -1,0 +1,13 @@
+{
+  "description" : "Get a single pipeline by ID with its statuses.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Pipeline ID"
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

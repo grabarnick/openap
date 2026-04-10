@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a message with HTML formatting",
   "input" : {
     "type" : "object",
     "properties" : {

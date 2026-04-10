@@ -1,4 +1,5 @@
 {
+  "description" : "Returns the reason why an outgoing call was not connected. Returns null if not available",
   "input" : {
     "type" : "object",
     "properties" : { },

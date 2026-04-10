@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the chat ID from the current request",
   "input" : {
     "type" : "object",
     "properties" : { },

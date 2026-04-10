@@ -1,4 +1,5 @@
 {
+  "description" : "Retrieves the chat history in LLM-compatible format",
   "input" : {
     "type" : "object",
     "properties" : { },

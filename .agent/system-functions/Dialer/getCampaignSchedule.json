@@ -1,4 +1,5 @@
 {
+  "description" : "Returns the schedule of the dialing campaign. Returns null if not available",
   "input" : {
     "type" : "object",
     "properties" : { },

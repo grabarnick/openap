@@ -1,0 +1,8 @@
+{
+  "description" : "List all sales pipelines with their statuses. Returns pipeline name, sort order, and embedded statuses array with status ID, name, color, and sort order. Use this to discover available pipelines and status IDs for creating/updating leads.",
+  "input" : {
+    "type" : "object",
+    "properties" : { },
+    "required" : [ ]
+  }
+}

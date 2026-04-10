@@ -1,4 +1,5 @@
 {
+  "description" : "Retrieves a previously stored value",
   "input" : {
     "type" : "object",
     "properties" : {

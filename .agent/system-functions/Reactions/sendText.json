@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a text message as a response",
   "input" : {
     "type" : "object",
     "properties" : {

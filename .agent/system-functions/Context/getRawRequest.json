@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the raw request data from the current request",
   "input" : {
     "type" : "object",
     "properties" : { },

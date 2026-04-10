@@ -82,6 +82,21 @@ Executes a user-defined or system function.
 Each entry in `parameters.parameters` map is a parameter name mapped to an object with `type`, `value`, and `filled-ai` fields.
 The `type` field inside each parameter entry specifies the parameter data type (STRING, NUMBER, INTEGER, BOOLEAN, CREDENTIAL, LLM_MODEL, INTEGRATION_DB, INTEGRATION_SMTP, INTEGRATION_RAG, ARRAY, OBJECT).
 
+For primitive types (STRING, NUMBER, INTEGER, BOOLEAN, CREDENTIAL, LLM_MODEL, INTEGRATION_DB, INTEGRATION_SMTP, INTEGRATION_RAG), `value` is a string or null.
+For ARRAY type: `value` must be null, use `items` list instead. Each item has `type` and `value`.
+For OBJECT type: `value` must be null, use `properties` map instead. Each property has `type` and `value`.
+
+ARRAY parameter example:
+```yaml
+recipients:
+  type: ARRAY
+  value: null
+  items:
+    - type: STRING
+      value: "user@example.com"
+  filled-ai: false
+```
+
 ### Function Context Config
 
 | YAML Field | Type | Required | Description | Example |

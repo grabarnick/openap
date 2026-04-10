@@ -1,4 +1,5 @@
 {
+  "description" : "Returns the conversation context back to the original project",
   "input" : {
     "type" : "object",
     "properties" : {

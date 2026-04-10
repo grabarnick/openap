@@ -1,4 +1,5 @@
 {
+  "description" : "Returns the durations of pauses between dial retry attempts. Returns null if not available",
   "input" : {
     "type" : "object",
     "properties" : { },

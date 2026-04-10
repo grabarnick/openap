@@ -1,4 +1,5 @@
 {
+  "description" : "Deletes a document by documentKey",
   "input" : {
     "type" : "object",
     "properties" : {

@@ -1,4 +1,5 @@
 {
+  "description" : "Switches the conversation context to another project.",
   "input" : {
     "type" : "object",
     "properties" : {

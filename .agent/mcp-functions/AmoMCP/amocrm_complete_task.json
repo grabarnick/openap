@@ -1,0 +1,17 @@
+{
+  "description" : "Mark a task as completed. Optionally provide a result text describing the outcome.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Task ID to complete"
+      },
+      "result_text" : {
+        "type" : "string",
+        "description" : "Text describing the task result/outcome"
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

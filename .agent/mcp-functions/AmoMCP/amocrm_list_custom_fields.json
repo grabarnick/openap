@@ -1,0 +1,21 @@
+{
+  "description" : "List custom fields for an entity type (leads, contacts, companies, customers, catalogs). Returns field ID, name, type, code, enums (for select/multiselect), and required statuses. Useful for understanding the data structure before creating or updating entities.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Entity type to get custom fields for"
+      },
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      }
+    },
+    "required" : [ "entity_type" ]
+  }
+}

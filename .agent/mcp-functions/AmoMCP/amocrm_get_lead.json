@@ -1,0 +1,17 @@
+{
+  "description" : "Get a single lead by ID with full details. Use the \"with\" parameter to include embedded contacts, companies, tags, and other related data.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Lead ID"
+      },
+      "with" : {
+        "type" : "string",
+        "description" : "Comma-separated list of related entities to include: contacts, companies, tags, catalog_elements, loss_reason, source"
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

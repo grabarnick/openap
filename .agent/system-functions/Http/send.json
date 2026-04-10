@@ -1,4 +1,5 @@
 {
+  "description" : "Send an HTTP request with the specified method and parameters",
   "input" : {
     "type" : "object",
     "properties" : {

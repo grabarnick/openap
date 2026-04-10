@@ -1,4 +1,5 @@
 {
+  "description" : "Converts text to speech using the specified TTS integration and returns an audio URL",
   "input" : {
     "type" : "object",
     "properties" : {

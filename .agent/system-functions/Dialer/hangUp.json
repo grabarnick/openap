@@ -1,4 +1,5 @@
 {
+  "description" : "Terminates the current call. On telephony channels sends a hangup reply, on other channels sends an optional text message",
   "input" : {
     "type" : "object",
     "properties" : {

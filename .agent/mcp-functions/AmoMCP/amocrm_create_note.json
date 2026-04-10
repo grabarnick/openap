@@ -1,0 +1,27 @@
+{
+  "description" : "Add a note to an entity (lead, contact, company). Common note_type values: \"common\" for text notes, \"call_in\"/\"call_out\" for calls. The params object varies by note_type (e.g., {text: \"...\"} for common notes).",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Entity type"
+      },
+      "entity_id" : {
+        "type" : "number",
+        "description" : "Entity ID to add the note to"
+      },
+      "note_type" : {
+        "type" : "string",
+        "description" : "Note type: common, call_in, call_out, service_message, etc."
+      },
+      "params" : {
+        "type" : "object",
+        "description" : "Note parameters. For common notes: {text: \"note text\"}. For calls: {uniq: \"call_id\", duration: 60, link: \"recording_url\", phone: \"+1234567890\"}",
+        "properties" : { },
+        "required" : [ ]
+      }
+    },
+    "required" : [ "entity_type", "entity_id", "note_type", "params" ]
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a voice message to a Telegram chat",
   "input" : {
     "type" : "object",
     "properties" : {

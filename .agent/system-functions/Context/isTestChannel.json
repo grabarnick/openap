@@ -1,4 +1,5 @@
 {
+  "description" : "Checks if the current channel is a test channel",
   "input" : {
     "type" : "object",
     "properties" : { },

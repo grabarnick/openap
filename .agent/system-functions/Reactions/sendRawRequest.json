@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a raw request as a response for advanced use cases",
   "input" : {
     "type" : "object",
     "properties" : {

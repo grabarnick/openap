@@ -1,4 +1,5 @@
 {
+  "description" : "Schedules a new series of retry attempts to dial the number. Requires startDateTime or localTimeFrom at least",
   "input" : {
     "type" : "object",
     "properties" : {

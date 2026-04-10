@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the result of the previously executed function",
   "input" : {
     "type" : "object",
     "properties" : { },

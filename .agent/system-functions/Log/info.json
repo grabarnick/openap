@@ -1,4 +1,5 @@
 {
+  "description" : "Logs an informational message",
   "input" : {
     "type" : "object",
     "properties" : {

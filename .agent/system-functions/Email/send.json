@@ -1,4 +1,5 @@
 {
+  "description" : "Sends an email using the specified SMTP integration",
   "input" : {
     "type" : "object",
     "properties" : {

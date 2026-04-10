@@ -1,4 +1,5 @@
 {
+  "description" : "Adds a text fragment to the context. Empty strings are ignored.",
   "input" : {
     "type" : "object",
     "properties" : {

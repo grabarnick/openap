@@ -1,4 +1,5 @@
 {
+  "description" : "Summarizes long text to a specified size while preserving key information.",
   "input" : {
     "type" : "object",
     "properties" : {

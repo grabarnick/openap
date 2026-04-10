@@ -1,0 +1,59 @@
+{
+  "description" : "Update an existing contact by ID. Only provided fields will be modified.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "number",
+        "description" : "Contact ID to update"
+      },
+      "name" : {
+        "type" : "string",
+        "description" : "New contact name"
+      },
+      "first_name" : {
+        "type" : "string",
+        "description" : "New first name"
+      },
+      "last_name" : {
+        "type" : "string",
+        "description" : "New last name"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "New responsible user ID"
+      },
+      "tags_to_add" : {
+        "type" : "array",
+        "description" : "Tags to add",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      },
+      "tags_to_delete" : {
+        "type" : "array",
+        "description" : "Tags to remove",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      },
+      "custom_fields_values" : {
+        "type" : "array",
+        "description" : "Custom field values to update",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      }
+    },
+    "required" : [ "id" ]
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a request to an LLM model",
   "input" : {
     "type" : "object",
     "properties" : {

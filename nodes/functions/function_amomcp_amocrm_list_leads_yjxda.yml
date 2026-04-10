@@ -1,0 +1,34 @@
+---
+id: function_amomcp_amocrm_list_leads_yjxda
+name: amocrm_list_leads
+position:
+  x: 1003
+  y: 24
+next-step: null
+parameters:
+  type: MCP
+  collection: AmoMCP
+  function: amocrm_list_leads
+  is-tool: true
+  parameters:
+    query:
+      type: STRING
+      value: null
+      filled-ai: true
+    page:
+      type: NUMBER
+      value: null
+      filled-ai: false
+    limit:
+      type: NUMBER
+      value: null
+      filled-ai: false
+    with:
+      type: STRING
+      value: null
+      filled-ai: false
+    order:
+      type: STRING
+      value: null
+      filled-ai: false
+  context-config: null

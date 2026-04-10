@@ -1,4 +1,5 @@
 {
+  "description" : "Logs a trace message",
   "input" : {
     "type" : "object",
     "properties" : {

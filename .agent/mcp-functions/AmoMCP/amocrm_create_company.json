@@ -1,0 +1,37 @@
+{
+  "description" : "Create a new company in amoCRM. Provide name, responsible_user_id, and optional custom_fields_values.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "name" : {
+        "type" : "string",
+        "description" : "Company name"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "Responsible user ID"
+      },
+      "tags_to_add" : {
+        "type" : "array",
+        "description" : "Tags to add",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      },
+      "custom_fields_values" : {
+        "type" : "array",
+        "description" : "Custom field values",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      }
+    },
+    "required" : [ ]
+  }
+}

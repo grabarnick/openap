@@ -1,4 +1,5 @@
 {
+  "description" : "Calls external project by chat api token and optional custom data",
   "input" : {
     "type" : "object",
     "properties" : {

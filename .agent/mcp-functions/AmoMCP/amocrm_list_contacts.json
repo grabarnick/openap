@@ -1,0 +1,29 @@
+{
+  "description" : "List contacts in amoCRM with optional search and filtering. Supports pagination (max 250), search by keyword. Use \"with\" to include related leads, companies, customers.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "query" : {
+        "type" : "string",
+        "description" : "Search query string"
+      },
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      },
+      "with" : {
+        "type" : "string",
+        "description" : "Comma-separated related entities: catalog_elements, leads, customers"
+      },
+      "order" : {
+        "type" : "string",
+        "description" : "Sort order by updated_at"
+      }
+    },
+    "required" : [ ]
+  }
+}

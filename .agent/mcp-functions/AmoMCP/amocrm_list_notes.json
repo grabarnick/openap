@@ -1,0 +1,25 @@
+{
+  "description" : "List notes (comments, calls, etc.) for a specific entity. Entity type can be leads, contacts, companies, or customers. Returns notes with type, params, timestamps. Max 250 per page.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Entity type"
+      },
+      "entity_id" : {
+        "type" : "number",
+        "description" : "Entity ID"
+      },
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      }
+    },
+    "required" : [ "entity_type", "entity_id" ]
+  }
+}

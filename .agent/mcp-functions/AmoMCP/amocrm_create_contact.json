@@ -1,0 +1,45 @@
+{
+  "description" : "Create a new contact in amoCRM. Provide name, first_name, last_name, responsible_user_id, and optional custom_fields_values (phone, email, etc.).",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "name" : {
+        "type" : "string",
+        "description" : "Contact full name"
+      },
+      "first_name" : {
+        "type" : "string",
+        "description" : "First name"
+      },
+      "last_name" : {
+        "type" : "string",
+        "description" : "Last name"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "Responsible user ID"
+      },
+      "tags_to_add" : {
+        "type" : "array",
+        "description" : "Tags to add",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      },
+      "custom_fields_values" : {
+        "type" : "array",
+        "description" : "Custom field values (phone, email, etc.)",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : { },
+          "required" : [ ]
+        }
+      }
+    },
+    "required" : [ ]
+  }
+}

@@ -1,4 +1,5 @@
 {
+  "description" : "Logs a warning message",
   "input" : {
     "type" : "object",
     "properties" : {

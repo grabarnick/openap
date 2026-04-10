@@ -1,4 +1,5 @@
 {
+  "description" : "Gets email content from the current request",
   "input" : {
     "type" : "object",
     "properties" : { },

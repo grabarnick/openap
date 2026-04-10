@@ -1,4 +1,5 @@
 {
+  "description" : "Deletes all stored text notes",
   "input" : {
     "type" : "object",
     "properties" : {

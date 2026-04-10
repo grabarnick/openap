@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a geographic location as a response",
   "input" : {
     "type" : "object",
     "properties" : {

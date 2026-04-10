@@ -1,0 +1,37 @@
+{
+  "description" : "List tasks in amoCRM with optional filtering by responsible user, completion status, entity type, and entity ID. Supports pagination (max 250).",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "page" : {
+        "type" : "number",
+        "description" : "Page number (default: 1)"
+      },
+      "limit" : {
+        "type" : "number",
+        "description" : "Results per page, max 250 (default: 50)"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "Filter by responsible user ID"
+      },
+      "is_completed" : {
+        "type" : "boolean",
+        "description" : "Filter by completion status"
+      },
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Filter by entity type"
+      },
+      "entity_id" : {
+        "type" : "number",
+        "description" : "Filter by entity ID"
+      },
+      "order" : {
+        "type" : "string",
+        "description" : "Sort by complete_till"
+      }
+    },
+    "required" : [ ]
+  }
+}

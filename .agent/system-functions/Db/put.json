@@ -1,4 +1,5 @@
 {
+  "description" : "Saves a document by documentKey (upsert operation)",
   "input" : {
     "type" : "object",
     "properties" : {

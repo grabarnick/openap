@@ -1,4 +1,5 @@
 {
+  "description" : "Checks whether the current call is incoming or outgoing. A call is incoming if there is no outgoing call ID",
   "input" : {
     "type" : "object",
     "properties" : { },

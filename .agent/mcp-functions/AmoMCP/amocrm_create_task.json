@@ -1,0 +1,37 @@
+{
+  "description" : "Create a new task in amoCRM. Requires text and complete_till (deadline as Unix timestamp). Can be linked to an entity (lead, contact, company).",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "text" : {
+        "type" : "string",
+        "description" : "Task description text"
+      },
+      "complete_till" : {
+        "type" : "number",
+        "description" : "Deadline as Unix timestamp"
+      },
+      "entity_id" : {
+        "type" : "number",
+        "description" : "ID of the entity to link the task to"
+      },
+      "entity_type" : {
+        "type" : "string",
+        "description" : "Type of entity to link"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "Responsible user ID"
+      },
+      "task_type_id" : {
+        "type" : "number",
+        "description" : "Task type ID (1=call, 2=meeting, 3=email)"
+      },
+      "duration" : {
+        "type" : "number",
+        "description" : "Task duration in seconds"
+      }
+    },
+    "required" : [ "text", "complete_till" ]
+  }
+}

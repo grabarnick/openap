@@ -1,4 +1,5 @@
 {
+  "description" : "Deletes multiple documents by filter",
   "input" : {
     "type" : "object",
     "properties" : {

@@ -1,4 +1,5 @@
 {
+  "description" : "Sends a simple text message to the LLM and returns the response content",
   "input" : {
     "type" : "object",
     "properties" : {

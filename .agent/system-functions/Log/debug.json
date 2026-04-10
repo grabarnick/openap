@@ -1,4 +1,5 @@
 {
+  "description" : "Logs a debug message",
   "input" : {
     "type" : "object",
     "properties" : {

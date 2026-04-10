@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the content of the message from the current request",
   "input" : {
     "type" : "object",
     "properties" : { },

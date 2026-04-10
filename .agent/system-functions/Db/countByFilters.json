@@ -1,4 +1,5 @@
 {
+  "description" : "Counts documents matching the filter",
   "input" : {
     "type" : "object",
     "properties" : {

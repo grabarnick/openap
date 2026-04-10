@@ -1,4 +1,5 @@
 {
+  "description" : "Generates an answer using a RAG integration based on a query",
   "input" : {
     "type" : "object",
     "properties" : {

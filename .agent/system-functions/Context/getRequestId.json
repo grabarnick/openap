@@ -1,4 +1,5 @@
 {
+  "description" : "Gets the question ID from the current request",
   "input" : {
     "type" : "object",
     "properties" : { },

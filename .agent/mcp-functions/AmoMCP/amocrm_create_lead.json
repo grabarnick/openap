@@ -1,0 +1,69 @@
+{
+  "description" : "Create a new lead (deal) in amoCRM. Provide name, price, pipeline_id, status_id, responsible_user_id, and optional custom_fields_values. Tags can be added via tags_to_add array with objects containing id or name.",
+  "input" : {
+    "type" : "object",
+    "properties" : {
+      "name" : {
+        "type" : "string",
+        "description" : "Lead name"
+      },
+      "price" : {
+        "type" : "number",
+        "description" : "Lead value/price"
+      },
+      "status_id" : {
+        "type" : "number",
+        "description" : "Status ID within the pipeline"
+      },
+      "pipeline_id" : {
+        "type" : "number",
+        "description" : "Pipeline ID"
+      },
+      "responsible_user_id" : {
+        "type" : "number",
+        "description" : "Responsible user ID"
+      },
+      "tags_to_add" : {
+        "type" : "array",
+        "description" : "Array of tags to add (objects with name or id)",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : {
+            "name" : {
+              "type" : "string",
+              "description" : ""
+            }
+          },
+          "required" : [ ]
+        }
+      },
+      "custom_fields_values" : {
+        "type" : "array",
+        "description" : "Array of custom field values",
+        "items" : {
+          "type" : "object",
+          "description" : "",
+          "properties" : {
+            "field_id" : {
+              "type" : "number",
+              "description" : ""
+            },
+            "values" : {
+              "type" : "array",
+              "description" : "",
+              "items" : {
+                "type" : "object",
+                "description" : "",
+                "properties" : { },
+                "required" : [ ]
+              }
+            }
+          },
+          "required" : [ ]
+        }
+      }
+    },
+    "required" : [ ]
+  }
+}

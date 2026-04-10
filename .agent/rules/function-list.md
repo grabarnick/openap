@@ -180,6 +180,57 @@ For detailed info about parameters and response, read the corresponding file.
 - `Tts.synthesize` — Converts text to speech using the specified TTS integration and returns an audio URL
   Schema: .agent/system-functions/Tts/synthesize.json
 
+## MCP Functions
+
+- `AmoMCP.amocrm_list_leads` — List leads (deals) in amoCRM with optional search and filtering. Supports pagination (max 250 per page), search by keyword, and sorting. Use the "with" parameter to include related contacts, companies, tags, loss_reason. Returns HAL+JSON with _embedded.leads array.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_leads.json
+- `AmoMCP.amocrm_get_lead` — Get a single lead by ID with full details. Use the "with" parameter to include embedded contacts, companies, tags, and other related data.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_get_lead.json
+- `AmoMCP.amocrm_create_lead` — Create a new lead (deal) in amoCRM. Provide name, price, pipeline_id, status_id, responsible_user_id, and optional custom_fields_values. Tags can be added via tags_to_add array with objects containing id or name.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_create_lead.json
+- `AmoMCP.amocrm_update_lead` — Update an existing lead by ID. You can update name, price, status_id, pipeline_id, responsible_user_id, custom fields, tags, and other fields. Only provided fields will be updated.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_update_lead.json
+- `AmoMCP.amocrm_list_contacts` — List contacts in amoCRM with optional search and filtering. Supports pagination (max 250), search by keyword. Use "with" to include related leads, companies, customers.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_contacts.json
+- `AmoMCP.amocrm_get_contact` — Get a single contact by ID with full details including custom fields, tags, and optionally related leads and companies.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_get_contact.json
+- `AmoMCP.amocrm_create_contact` — Create a new contact in amoCRM. Provide name, first_name, last_name, responsible_user_id, and optional custom_fields_values (phone, email, etc.).
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_create_contact.json
+- `AmoMCP.amocrm_update_contact` — Update an existing contact by ID. Only provided fields will be modified.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_update_contact.json
+- `AmoMCP.amocrm_list_companies` — List companies in amoCRM with optional search and filtering. Supports pagination (max 250), search by keyword. Use "with" to include related contacts, leads, customers.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_companies.json
+- `AmoMCP.amocrm_get_company` — Get a single company by ID with full details including custom fields, tags, and optionally related contacts, leads.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_get_company.json
+- `AmoMCP.amocrm_create_company` — Create a new company in amoCRM. Provide name, responsible_user_id, and optional custom_fields_values.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_create_company.json
+- `AmoMCP.amocrm_update_company` — Update an existing company by ID. Only provided fields will be modified.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_update_company.json
+- `AmoMCP.amocrm_list_tasks` — List tasks in amoCRM with optional filtering by responsible user, completion status, entity type, and entity ID. Supports pagination (max 250).
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_tasks.json
+- `AmoMCP.amocrm_get_task` — Get a single task by ID with full details.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_get_task.json
+- `AmoMCP.amocrm_create_task` — Create a new task in amoCRM. Requires text and complete_till (deadline as Unix timestamp). Can be linked to an entity (lead, contact, company).
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_create_task.json
+- `AmoMCP.amocrm_complete_task` — Mark a task as completed. Optionally provide a result text describing the outcome.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_complete_task.json
+- `AmoMCP.amocrm_list_notes` — List notes (comments, calls, etc.) for a specific entity. Entity type can be leads, contacts, companies, or customers. Returns notes with type, params, timestamps. Max 250 per page.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_notes.json
+- `AmoMCP.amocrm_create_note` — Add a note to an entity (lead, contact, company). Common note_type values: "common" for text notes, "call_in"/"call_out" for calls. The params object varies by note_type (e.g., {text: "..."} for common notes).
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_create_note.json
+- `AmoMCP.amocrm_list_pipelines` — List all sales pipelines with their statuses. Returns pipeline name, sort order, and embedded statuses array with status ID, name, color, and sort order. Use this to discover available pipelines and status IDs for creating/updating leads.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_pipelines.json
+- `AmoMCP.amocrm_get_pipeline` — Get a single pipeline by ID with its statuses.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_get_pipeline.json
+- `AmoMCP.amocrm_list_users` — List all users in the amoCRM account. Returns user ID, name, email, language, and rights. Useful for getting responsible_user_id values.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_users.json
+- `AmoMCP.amocrm_list_events` — List events (activity log) in amoCRM. Events track changes to entities. Can filter by entity type, entity ID, event type, user, and date range. Max 100 per page.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_events.json
+- `AmoMCP.amocrm_list_catalogs` — List all catalogs (custom lists) in the amoCRM account. Returns catalog name, type, sort order, and settings.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_catalogs.json
+- `AmoMCP.amocrm_list_custom_fields` — List custom fields for an entity type (leads, contacts, companies, customers, catalogs). Returns field ID, name, type, code, enums (for select/multiselect), and required statuses. Useful for understanding the data structure before creating or updating entities.
+  Schema: .agent/mcp-functions/AmoMCP/amocrm_list_custom_fields.json
+
 ## User Functions
 
 - `SpaceArticles.searchArticles` — Найти последние статьи по нужной теме
