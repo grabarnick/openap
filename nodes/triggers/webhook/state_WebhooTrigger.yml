@@ -4,6 +4,6 @@ name: Вебхук
 position:
   x: 392
   y: 491
-next-step: state_SendNews
+next-step: null
 parameters:
   url: https://ky2.lo.test-ai.net/api/text-campaign-service/scenario-triggers/280c6a56-80b1-412b-a134-df7130a3d70c/invoke

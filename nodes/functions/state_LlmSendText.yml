@@ -4,7 +4,7 @@ name: Llm.sendText
 position:
   x: 1191
   y: 376
-next-step: state_SendText
+next-step: null
 parameters:
   type: SYSTEM
   collection: Llm
