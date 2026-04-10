@@ -1,0 +1,14 @@
+{
+  "type" : "object",
+  "properties" : {
+    "dbIntegration" : {
+      "type" : "string",
+      "description" : ""
+    },
+    "documentKey" : {
+      "type" : "string",
+      "description" : "Document key"
+    }
+  },
+  "required" : [ "dbIntegration", "documentKey" ]
+}

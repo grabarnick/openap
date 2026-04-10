@@ -1,0 +1,16 @@
+{
+  "type" : "object",
+  "properties" : {
+    "dbIntegration" : {
+      "type" : "string",
+      "description" : ""
+    },
+    "filters" : {
+      "type" : "object",
+      "description" : "Filter criteria for deletion",
+      "properties" : { },
+      "required" : [ ]
+    }
+  },
+  "required" : [ "dbIntegration", "filters" ]
+}
