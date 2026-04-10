@@ -4,7 +4,7 @@ name: Оценщик и упроститель
 position:
   x: 1244
   y: -290
-next-step: state_SendEmail
+next-step: null
 parameters:
   llm-model-key: 1000001-open_ai_gpt41-zkp
   llm-model-settings:
