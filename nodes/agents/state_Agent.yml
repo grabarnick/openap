@@ -13,7 +13,7 @@ parameters:
     top-p: 1.0
     frequency-penalty: 0.0
     presence-penalty: 0.0
-    verbose-mode: true
+    verbose-mode: false
   system-promts:
     role: Помощник
     goal: "Выполни задание, которое тебе дал пользователь"
@@ -28,7 +28,7 @@ parameters:
       1. Проанализируй последние сообщения в чате.
       2. Составь один абзац текста с основными событиями, переведи на русский язык. Ссылки и даты не включай.
       3. Отправь пользователю.
-    query-override: null
+    query-override: ""
   tools:
   - state_searchArticles
   handoff-agents:
