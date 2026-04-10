@@ -1,0 +1,10 @@
+---
+key: default-smtp
+name: Default SMTP
+host: smtp.gmail.com
+port: 587
+sender: agrabarnick@gmail.com
+is-ssl-enabled: false
+is-tls-enabled: true
+is-direct-access: false
+credential-key: null

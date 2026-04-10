@@ -1,0 +1,36 @@
+---
+id: state_SendEmail
+name: Отправить письмо
+position:
+  x: 1644
+  y: -290
+next-step: null
+parameters:
+  type: SYSTEM
+  collection: Email
+  function: send
+  is-tool: false
+  parameters:
+    smtpIntegration:
+      type: INTEGRATION_SMTP
+      value: default-smtp
+      filled-ai: false
+    recipients:
+      type: ARRAY
+      value:
+      - agrabarnick@gmail.com
+      filled-ai: false
+    subject:
+      type: STRING
+      value: "Результат работы агента"
+      filled-ai: false
+    content:
+      type: STRING
+      value: "{{Context.getLastFunctionResult()}}"
+      filled-ai: true
+  context-config:
+    enabled: false
+    key: null
+    value-prefix: ""
+    put-if-error: false
+    handoff-agents: null
